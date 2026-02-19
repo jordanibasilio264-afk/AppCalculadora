@@ -1,0 +1,141 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+}
+
+button{
+    font-size: 1.5em;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+    cursor: pointer;
+}
+.Calculadora{
+   background-color: hsl(223, 31%, 20%);
+   padding: 20px;
+   border-radius: 10px;
+   display: grid;
+   grid-template-columns: 100px 100px 100px 100px;
+   grid-template-rows: 50px 50px 50px 50px;
+   gap: 20px;
+}
+#pantalla{
+    height: 100px;
+    font-size: 40px;
+    width: 100%;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    margin-top: 20px;
+    text-align: end;
+}
+#reinicio{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    grid-column: 1/3;
+    width: 100%;
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+#igual{
+  grid-column: 3/5;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+.Cambio{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 0px;
+    gap: 0.2rem;
+}
+#eliminar{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+.oo{
+    margin-right: 310px;
+    font-size: 1.5em;
+}
+#n{
+    margin-right: 20px;
+}
+#mover{
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.mena{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botones3{
+  background-color: hsl(223, 31%, 20%);
+  padding: 5PX;
+  border-radius: 20px;
+}
+.mover2{
+    margin-right: 14px;
+}
+button:active{
+    background-color: white;
+}
+#eliminar:active{
+    background-color: hsl(223, 31%, 65%);
+}
+#reinicio:active{
+    background-color: hsl(223, 31%, 65%);
+}
+#igual:active{
+  background-color: hsl(6, 73%, 65%);
+}
+@media (max-width: 600px){
+    
+    .Calculadora{
+        display: flex;
+        flex-wrap: wrap;
+        width: 64%;
+        gap: 10px;
+    }
+    button{
+        width: 70px;
+        height: 60px;
+    }
+    #reinicio{
+        width: 150px;
+        height: 50px;
+    }
+    #igual{
+        width: 150px;
+    }
+    #pantalla{
+        width: 71%;
+    }
+    .oo{
+        margin-right:  150px;
+    }
+    #mover{
+        margin-right: 140px;
+    }
+    .Cambio{
+        margin-right: 70px;
+    }
+}
